@@ -2,11 +2,18 @@
 Active regression example with Gaussian processes.
 """
 
+# add the package to system path
+import os
+import sys
+path = os.path.dirname(os.getcwd())
+sys.path.append(path)
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import WhiteKernel, RBF
 from modAL.models import ActiveLearner
+
 
 
 # query strategy for regression

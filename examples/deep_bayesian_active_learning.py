@@ -1,3 +1,9 @@
+# add the package to system path
+import os
+import sys
+path = os.path.dirname(os.getcwd())
+sys.path.append(path)
+
 import keras
 import numpy as np
 from keras import backend as K
